@@ -38,7 +38,7 @@ public class PhotoController {
         photo.setDescription(description);
         photo.setFile(file);
 
-        // Save the photo entity, including the file data
+        // Save the photo entity, including the file data.
         return photoService.createPhoto(photo);
     }
 
