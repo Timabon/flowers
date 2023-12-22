@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+.your-css-class{
+  position: relative;
+  width: 120px; /* Adjust the width and height to your preference */
+  height: 120px;
+  background-image: url('assets/images/photo-duck.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: top right; /* Position the image to the top right corner */
+
+  /* You can use top, right, and margin to fine-tune the position */
+  top: 10px; /* Adjust as needed to move the image down from the top */
+  right: 10px; /* Adjust as needed to move the image left from the right */
+  border: 3px solid #fff; /* Add a border for a profile picture effect */
+  border-radius: 50%; /* Make it circular */
+}
+body {
+  /*background-image: url('assets/images/hero-patagonia.jpg');*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center; /* You can adjust this for different positions (e.g., top, right, left) */
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Space items evenly horizontally */
+}
+
+.navbar {
+  /* Your navbar styles */
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.nav-list {
+  color: black !important;
+  /* Set the text color to white */
+
+}
+
+.nav-list.notactive{
+  color: black !important;
+
+}
+
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.photo-item {
+  flex: 0 0 calc(33.33% - 20px); /* 33.33% width with some margin */
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.photo-content {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 250px;
+}
+
+.text-center{
+  top: 3px;
+}
+
+
+.read-more-link {
+  font-weight: bold; /* Make the text bold (fatter) */
+  color: gray; /* Change the text color to grey */
+  text-decoration: none; /* Remove underline (optional) */
+  cursor: pointer; /* Change cursor on hover (optional) */
+}
+
+.myButton {
+  margin-top: auto;
+}

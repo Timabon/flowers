@@ -1,0 +1,19 @@
+<div class="col-md-6 offset-md-3">
+  <h3>Edit Photo</h3>
+  <form (ngSubmit)="updatePhoto()" #photoForm="ngForm">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" [(ngModel)]="photo.title" class="form-control" id="title" name="title" placeholder="Title" required>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea [(ngModel)]="photo.description" class="form-control" id="description" name="description" rows="5" placeholder="Description" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+  </form>
+
+  <div *ngIf="successMessage" class="alert alert-success">
+    {{ successMessage }}
+  </div>
+</div>

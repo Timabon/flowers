@@ -1,0 +1,22 @@
+<h2>Photo List</h2>
+<meta charset="UTF-8">
+
+<div class="photo-container">
+  <div class="photo-item" *ngFor="let phot of photos">
+    <div class="photo-content">
+      <img [src]="phot.fileUrl" alt="Photo" />
+      <p>{{ phot.title ? phot.title : 'No Title' }}</p>
+      <p>
+        <ng-container *ngIf="!phot.showFullDescription; else shortDescription">
+          {{ phot.description.split(' ').slice(0, 5).join(' ') }}...
+          <a (click)="showFullDescription(phot)" class="read-more-link">Read More</a>
+        </ng-container>
+      </p>
+      <ng-template #shortDescription>
+        <p>{{ phot.description }} <a (click)="showFullDescription(phot)" class="read-more-link">Read Less</a></p>
+      </ng-template>
+
+    </div>
+    <button class="myButton" (click)="editPhoto(phot.id)">Edit</button>
+  </div>
+</div>

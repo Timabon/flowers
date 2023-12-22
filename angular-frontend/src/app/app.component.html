@@ -1,0 +1,21 @@
+<div class="navbar-container">
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a routerLink="photos" routerLinkActive="active" class="nav-list">Photo List</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="create-photo" routerLinkActive="active" class="nav-list notactive">Upload Photo</a>
+      </li>
+      
+    </ul>
+  </nav>
+
+  <img src="assets/images/photo-duck.jpg" alt="My Static Image" class="your-css-class">
+</div>
+
+<h1 class="text-center">{{ title }}</h1>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
